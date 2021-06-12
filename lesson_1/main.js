@@ -1,19 +1,13 @@
 
 /**
- * Toán tử gán
-
-Toán tử         Ví dụ           Tương đương
-=               x = y           x = y
-+=              x += y          x = x + y
--+              x -= y          x = x - y
-*=              x *= y          x = x * y
-/=              x /= y          x = x / y
-**=             x **= y         x = x ** y
-
+ * Toán tử chuỗi - String operator
  */
 
+var firstName = 'Hiep';
+var lastName = 'Hoang';
 
-var a = 1;
+console.log(firstName + ' ' + lastName);
 
-a = a + 2;
-console.log(a)
+var name = 'Son';
+name = name + ' Dang';
+console.log(name);
