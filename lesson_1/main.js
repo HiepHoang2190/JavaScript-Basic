@@ -1,21 +1,22 @@
 /**
- * if - else
- */
-/**
- * 0
- * false
- * '' - ""
- * undefined
- * NaN
- * null
+ * Toán tử logic
+ * 1. && - And
+ * 2. || - Or
+ * 3. ! - Not
  */
 
-// đưa các giá trị trên vào thì ra : điều kiện sai
+var a = 1;
+var b = 2;
+var c = 3;
 
-var isSuccess = 1 > 2;
-
-if (isSuccess) {
+if (a > 0 && b > 0) {
     console.log('Điều kiện đúng');
-} else {
-    console.log('Điều kiện sai');
+}
+
+if (a > 0 || b > 0 || c < 0) {
+    console.log('Điều kiện đúng');
+}
+
+if (!(a > 0)) {
+    console.log('Điều kiện đúng');
 }
