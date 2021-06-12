@@ -1,27 +1,45 @@
-
 /**
- * Kiểu số (Number) trong Javascript
+ * Mảng trong Javascript - Array
  * 
- * 1. Tạo giá trị Number
- *      - Các cách tạo
- *      - Dùng cách nào ? tại sao ?
- *      - Kiểm tra data type
+ * 1. Tạo mảng
+ *      - Cách tạo
+ *      - Sử dụng cách nào? Tại sao?
+ *      - Kiểm tra data type?
  * 
- * 2. Làm việc với Number
- *      - To string
- *      - To Fixed
+ * 2. Truy xuất mảng
+ *      - Độ dài mảng
+ *      - Lấy phần tử theo index
  */
 
-var age = 18;
-var PI = 3.14;
-var number = 3000.2545454646;
-var result = 20 / 'ABC';
+var languages = [
+    'JavaScript',
+    'PHP',
+    'Ruby',
+    null,
+    undefined,
+    function () {
 
-console.log(result);
+    },
+    {},
+    123
+];
 
-console.log(isNaN(result));
+var languages2 = new Array(
+    'JavaScript',
+    'PHP',
+    'Ruby',
+    null,
+    undefined,
+    function () {
 
-console.log(age.toString());
+    },
+    {},
+    123
+);
+console.log(languages);
+console.log(languages2);
 
+console.log(typeof (languages2));
 
-console.log(number.toFixed(3));
+console.log(Array.isArray(languages));
+console.log(languages[1]);
