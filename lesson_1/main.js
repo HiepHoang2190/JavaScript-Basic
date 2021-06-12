@@ -1,10 +1,21 @@
 /**
- * Boolean
+ * if - else
+ */
+/**
+ * 0
+ * false
+ * '' - ""
+ * undefined
+ * NaN
+ * null
  */
 
-var a = 1;
-var b = 2;
+// đưa các giá trị trên vào thì ra : điều kiện sai
 
-var isSuccess = a > b;
+var isSuccess = 1 > 2;
 
-console.log(isSuccess);
+if (isSuccess) {
+    console.log('Điều kiện đúng');
+} else {
+    console.log('Điều kiện sai');
+}
