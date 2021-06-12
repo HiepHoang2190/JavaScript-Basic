@@ -1,32 +1,32 @@
-
-
 /**
- * Giới thiệu mọt số hàm built-in
-1. Alert
-2.Console
-3.Configrm
-4.Prompt
-5.Set setTimeout
-6.Set interval
+ *
+Giới thiệu về toán tử trong  JavaScript
+1. Toán tử số học - Arithmetic
+2. Toán tử gán - Assignment
+3. Toán tử so sánh - Comparison
+4. Toán tử logic - Logical
  */
 
-var fullName = 'Hoang Bach Hiep';
+// 1.
+var a = 1 * 2;
+console.log(a);
 
-console.log(fullName);
+// 2.
+var fullName = 'Hoang Ngoc Hung';
 
-// confirm('Xac nhan ban du tuoi!');
+// 3
 
-// prompt('Xac nhan ban du tuoi!');
+var a = 1;
+var b = 2;
 
-// setTimeout(function () {
-//     alert('Thong bao');
-// }, 1000);
+if (a > b) {
+    alert('Dung');
+}
 
-// set time out để chạy đoạn code 1 lần sau 1 khoảng thời gian xác định
+// 4
 
-setInterval(() => {
-    console.log('Day la log' + Math.random());
-}, 1000);
-
-// set interval chạy đoạn code sau 1 khoảng thời gian nhưng lặp lại chứ ko chạy 1 lần 
-// như set timeout
+var a = 1;
+var b = 2;
+if (a > 0 && b > 0) {
+    alert('a & b lớn hơn 0');
+}
