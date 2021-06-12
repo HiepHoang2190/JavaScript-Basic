@@ -1,45 +1,48 @@
 /**
- * Mảng trong Javascript - Array
+ * Làm việc với Array
  * 
- * 1. Tạo mảng
- *      - Cách tạo
- *      - Sử dụng cách nào? Tại sao?
- *      - Kiểm tra data type?
+ * Keyword: Javascript array methods
  * 
- * 2. Truy xuất mảng
- *      - Độ dài mảng
- *      - Lấy phần tử theo index
+ * 1. To string
+ * 2. Join
+ * 3. Pop
+ * 4. Push
+ * 5. Shift
+ * 6. Unshift
+ * 7. Spilicing
+ * 8. Concat
+ * 9, Slicing
  */
 
 var languages = [
     'JavaScript',
     'PHP',
-    'Ruby',
-    null,
-    undefined,
-    function () {
-
-    },
-    {},
-    123
+    'Ruby'
 ];
 
-var languages2 = new Array(
-    'JavaScript',
-    'PHP',
-    'Ruby',
-    null,
-    undefined,
-    function () {
+var languages2 = [
+    'Net Core',
+    'Python',
+];
+// console.log(languages.join(', '));
 
-    },
-    {},
-    123
-);
-console.log(languages);
-console.log(languages2);
+// console.log(languages.pop()); // xóa element cuối mảng và trả về phần tử đã xóa
+// console.log(languages);
 
-console.log(typeof (languages2));
+// console.log(languages.push('Dart', 'Java'));
+// console.log(languages);
 
-console.log(Array.isArray(languages));
-console.log(languages[1]);
+// console.log(languages.shift());
+// console.log(languages);
+
+// console.log(languages.unshift('Dart', 'Java'));
+// console.log(languages);
+
+// languages.splice(1, 1, 'Dart');
+// console.log(languages);
+
+// console.log(languages.concat(languages2));
+
+console.log(languages.slice(1, 4));
+console.log(languages.slice(0));
+console.log(languages.slice(-2, -1));
