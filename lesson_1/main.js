@@ -1,13 +1,23 @@
 
 /**
- * Toán tử chuỗi - String operator
+ * Toán tử so sánh
+
+Toán tử
+
+==     -->    Bằng
+!=     --?    Không bằng
+>      -->    Lớn hơn
+<      -->    Nhỏ hơn
+>=     -->    Lớn hơn hoặc bằng
+<=     -->    Nhỏ hơn hoặc băng
  */
 
-var firstName = 'Hiep';
-var lastName = 'Hoang';
 
-console.log(firstName + ' ' + lastName);
+var a = 1;
+var b = 2;
 
-var name = 'Son';
-name = name + ' Dang';
-console.log(name);
+if (a == 1) {
+    console.log('Điều kiện đúng!');
+} else {
+    console.log('Điều kiện sai!');
+}
