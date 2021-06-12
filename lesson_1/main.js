@@ -1,36 +1,53 @@
-/**
- * CHUỖI TRONG JAVASCRIPT
- * 
- * 1. Tạo chuỗi
- *      - Các cách tạo chuỗi
- *      - Nên dùng cách nào? Lý do ?
- *      - Kiểm tra data taype
- * 2. Một số case sử dụng backslash (\)
- * 3. Xem độ dài chuỗi
- * 4. Chú ý độ dài khi viết Code
- * 5.Template string ES6
- * 
- */
 
-// var fullName = new String('Hiep Hoang');
-// console.log(typeof fullName);
+// LÀM VIỆC VỚI CHUỖI
 
-var fullName = 'Son Dang la \'Sieu nhan\'';
-console.log(fullName);
+var myString = '  HỌC JS TAI JS JS F8!  ';
 
-console.log(fullName.length);
+// Keyword: JavaScript string methods
 
-// Cách xuống dòng để code gọn
+// 1. Length
+console.log(myString.length);
 
-var fullName2 = "Một số case sử dụng backslash "
-    + "1. Một số case sử dụng backslash"
-    + "2. Một số case sử dụng backslash"
-    + "3. Một số case sử dụng backslash"
-    ;
-console.log(fullName2);
+// 2. Find index
+console.log(myString.indexOf('JS'));
+console.log(myString.indexOf('JS', 6));
+console.log(myString.lastIndexOf('JS'));
+console.log(myString.search('JS'));
 
-// Template string ES6
-var firstName = 'Son';
-var lastName = "Dang";
-// console.log(' Toi la: ' + firstName + ' ' + lastName);
-console.log(`Toi la: ${firstName} ${lastName}`);
+// 3. Cut string
+
+console.log(myString.slice(4, 6));
+console.log(myString.slice(4));
+console.log(myString.slice(0));
+console.log(myString.slice(-3, -1));
+
+// 4. Replace
+console.log(myString.replace('JS', 'Javascript'));
+console.log(myString.replace(/JS/g, 'Javascript')); // dùng biểu thức chính quy để thay hết các từ js
+
+// 5. Convert to upper case
+
+console.log(myString.toUpperCase());
+
+// 6. Convert to lower case
+
+console.log(myString.toLowerCase());
+
+// 7. Trim
+console.log(myString.trim());
+
+// 8. Spilit
+var languages = 'Javascript, PHP, Ruby';
+console.log(languages.split(','));
+console.log(languages.split(', '));
+
+var languages2 = 'Javascript';
+console.log(languages.split(''));
+
+// 9. Get a character by index
+
+const myString2 = 'Son Dang';
+
+console.log(myString2.charAt(0));
+console.log(myString2.charAt(1));
+console.log(typeof (myString2.charAt(100)));
