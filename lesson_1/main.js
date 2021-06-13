@@ -1,34 +1,30 @@
 /**
- * Một số điều cần biết về function
- * 
- * 1. Khi function đặt trùng tên
- * 2. Khai báo biến trong hàm
- * 3. Định nghĩa hàm trong hàm
- * 
+ * Các loại function
+ *
+ * 1. Declaration function
+ * 2. Expression function
+ * 3. Arrow function
+ *
  */
 
+// Declaration function
 function showMessage() {
-    console.log('Message 1');
-}
-function showMessage() {
-    console.log('Message 2');
-}
-function showMessage() {
-    console.log('Message 3');
+    console.log('Declaration function');
 }
 
 showMessage();
-
-function showMessage2() {
-    var fullName = 'Son Dang';
-    console.log(fullName);
+// Expression function
+var showMessage2 = function () {
+    console.log('Expression function');
 }
 showMessage2();
 
-function showMessage4() {
-    function showMessage3() {
-        console.log('Message 2');
+setTimeout(function autoLogin() {
+
+});
+
+var myObject = {
+    myFunction: function () {
+
     }
-    showMessage2();
 }
-showMessage4();
