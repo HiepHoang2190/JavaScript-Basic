@@ -1,26 +1,41 @@
+// Tham số hàm - JavaScript cơ bản
+
 /**
- * Hàm (function) trong JavaScript
+ * 1. Tham số?
+ *      - Định nghĩa
+ *      - Kiểu dữ liệu
+ *      - Tính private
+ *      - 1 tham số
+ *      - Nhiều tham s
  * 
- * 1. Hàm ?
- *      - Một khối mã
- *      - Làm 1 việc cụ thể
- * 
- * 2. Loại hàm
- *      - Built-in
- *      - Tự định nghĩa
- * 
- * 3. Tính chất
- *      - Không thực thi khi định nghĩa
- *      - Sẽ thực thi khi được gọi
- *      - Có thể nhận tham số
- *      - Có thể trả về 1 giá trị
- * 
+ * 2. Arguments?
+ *      - Đối tượng arguments
+ *      - Giới thiệu vòng for
  */
 
-// function
+// function writeLog(message, message2) {
+//     if (message) {
+//         console.log(message);
+//     }
+//     if (message2) {
+//         console.log(message2);
+//     }
+// }
 
-function showDialog() {
-    alert('Hi xin chào các bạn');
-};
+// writeLog('TEST', 'TEST2');
 
-showDialog();
+
+// function writeLog2() {
+//     console.log(arguments);
+// }
+// writeLog2('TEST', 'TEST2');
+
+function writeLog3() {
+    var myString = '';
+    for (var param of arguments) {
+        myString += ` ${param} -`
+    }
+    console.log(myString);
+}
+writeLog3('TEST', 'TEST2', 'log 2', 'log3');
+
