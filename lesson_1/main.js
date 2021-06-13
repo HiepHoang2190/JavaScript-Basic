@@ -1,9 +1,34 @@
-// Return trong hàm - Javascript cơ bản
+/**
+ * Một số điều cần biết về function
+ * 
+ * 1. Khi function đặt trùng tên
+ * 2. Khai báo biến trong hàm
+ * 3. Định nghĩa hàm trong hàm
+ * 
+ */
 
-
-function cong(a, b) {
-    return a + b;
+function showMessage() {
+    console.log('Message 1');
+}
+function showMessage() {
+    console.log('Message 2');
+}
+function showMessage() {
+    console.log('Message 3');
 }
 
-var result = cong(2, 8);
-console.log(result);
+showMessage();
+
+function showMessage2() {
+    var fullName = 'Son Dang';
+    console.log(fullName);
+}
+showMessage2();
+
+function showMessage4() {
+    function showMessage3() {
+        console.log('Message 2');
+    }
+    showMessage2();
+}
+showMessage4();
