@@ -1,30 +1,35 @@
-/**
- * Các loại function
- *
- * 1. Declaration function
- * 2. Expression function
- * 3. Arrow function
- *
- */
 
-// Declaration function
-function showMessage() {
-    console.log('Declaration function');
-}
+//  Object trong JavaScript
 
-showMessage();
-// Expression function
-var showMessage2 = function () {
-    console.log('Expression function');
-}
-showMessage2();
+var emailKey = 'email';
 
-setTimeout(function autoLogin() {
-
-});
-
-var myObject = {
-    myFunction: function () {
+var myInfo = {
+    name: 'Son Dang',
+    age: 18,
+    address: 'Ha Noi, VN',
+    [emailKey]: 'sonvn@fullstack.edu.vn',
+    phone: '03030',
+    getName: function () {
+        return this.name;
+    },
+    getAge: function () {
 
     }
-}
+};
+
+// myInfo.email = 'sonvn@fullstack.edu.vn';
+// myInfo['my-email'] = 'sonvn@fullstack.edu.vn';
+
+var myKey = 'address';
+
+console.log(myInfo);
+
+console.log(myInfo.name);
+console.log(myInfo['email']);
+console.log(myInfo['namess']);
+console.log(myInfo[myKey]);
+
+// function --> phương thức / method
+//  Other --> thuộc tính / property
+
+console.log(myInfo.getName());
