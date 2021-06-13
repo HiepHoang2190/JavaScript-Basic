@@ -1,48 +1,26 @@
 /**
- * Làm việc với Array
+ * Hàm (function) trong JavaScript
  * 
- * Keyword: Javascript array methods
+ * 1. Hàm ?
+ *      - Một khối mã
+ *      - Làm 1 việc cụ thể
  * 
- * 1. To string
- * 2. Join
- * 3. Pop
- * 4. Push
- * 5. Shift
- * 6. Unshift
- * 7. Spilicing
- * 8. Concat
- * 9, Slicing
+ * 2. Loại hàm
+ *      - Built-in
+ *      - Tự định nghĩa
+ * 
+ * 3. Tính chất
+ *      - Không thực thi khi định nghĩa
+ *      - Sẽ thực thi khi được gọi
+ *      - Có thể nhận tham số
+ *      - Có thể trả về 1 giá trị
+ * 
  */
 
-var languages = [
-    'JavaScript',
-    'PHP',
-    'Ruby'
-];
+// function
 
-var languages2 = [
-    'Net Core',
-    'Python',
-];
-// console.log(languages.join(', '));
+function showDialog() {
+    alert('Hi xin chào các bạn');
+};
 
-// console.log(languages.pop()); // xóa element cuối mảng và trả về phần tử đã xóa
-// console.log(languages);
-
-// console.log(languages.push('Dart', 'Java'));
-// console.log(languages);
-
-// console.log(languages.shift());
-// console.log(languages);
-
-// console.log(languages.unshift('Dart', 'Java'));
-// console.log(languages);
-
-// languages.splice(1, 1, 'Dart');
-// console.log(languages);
-
-// console.log(languages.concat(languages2));
-
-console.log(languages.slice(1, 4));
-console.log(languages.slice(0));
-console.log(languages.slice(-2, -1));
+showDialog();
