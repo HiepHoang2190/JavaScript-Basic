@@ -1,17 +1,20 @@
-// Câu lệnh rẽ nhánh - Switch
+// Toán tử 3 ngôi - ternary operator
 
-
-var date = 2;
-
-switch (date) {
-    case 2:
-    case 3:
-    case 4:
-        console.log('Hôm nay là thứ 2, 3, 4');
-        break;
-    case 5:
-        console.log('Hôm nay là thứ 5');
-        break;
-    default:
-        console.log('Không biết');
+var course = {
+    name: 'Javascript',
+    coin: 250
 }
+
+// if (course.coin > 0) {
+//     console.log(`${course.coin} Coins`);
+// } else {
+//     console.log('Miễn phí');
+// }
+
+var result = course.coin > 0 ? `${course.coin} Coins` : 'Miễn phí';
+console.log(result);
+
+var a = 1;
+var b = 2;
+
+var c = a > 0 ? a : b;
