@@ -1,8 +1,13 @@
 
-//  Object constructor
+/**
+ * 
+ * Object prototype - Basic
+ * 1.Prototype là gì ?
+ * 2.Sử dụng khi nào
+ */
 
 
-var User = function (firstName, lastName, avatar) {
+function User(firstName, lastName, avatar) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.avatar = avatar;
@@ -12,14 +17,19 @@ var User = function (firstName, lastName, avatar) {
     }
 }
 
-var author = new User('Son', 'Đặng', 'Avatar');
-var user = new User('Vũ', 'Nguyễn', 'Avatar');
+User.prototype.className = 'F8';
+User.prototype.getClassName = function () {
+    return this.className;
+}
+var author = new User('Son', 'Đặng', 'Avatar 1');
+var user = new User('Vũ', 'Nguyễn', 'Avatar 2');
 
-author.title = 'Chia sẻ dạo tại F8';
-user.comment = 'Liệu có khóa asp.net k ad ';
+
 
 console.log(author);
 console.log(user);
 
-console.log(author.getName());
-console.log(user.getName());
+console.log(author.className);
+console.log(user.className);
+console.log(author.getClassName());
+console.log(user.getClassName());
