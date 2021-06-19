@@ -1,21 +1,13 @@
-// Break & Continue in loop
+// Vòng lặp lồng nhau - Nested loop
 
+var myArray = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+];
 
-// break
-// for (var i = 0; i < 10; i++) {
-//     console.log(i);
-//     if (i >= 5) {
-//         break;
-//     }
-// }
-
-
-// Continue
-
-for (var i = 0; i < 10; i++) {
-    if (i % 2 !== 0) {
-        continue;
+for (var i = 0; i < myArray.length; i++) {
+    for (var j = 0; j < myArray[i].length; j++) {
+        console.log(myArray[i][j]);
     }
-    console.log(i);
-
 }
