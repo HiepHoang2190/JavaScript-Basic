@@ -1,25 +1,19 @@
-// For/of loop
+//  while - loop
 
-// var languages = [
-//     'JavaScript',
-//     'PHP',
-//     'Java'
-// ];
+// var i = 0;
 
-// for (var value of languages) {
-//     console.log(value);
+// while (i < 1000) {
+//     i++;
+
+//     console.log(i);
 // }
 
-
-var myInfo = {
-    name: 'Son Dang',
-    age: 18
-};
-// console.log(Object.keys(myInfo));
-// console.log(Object.values(myInfo));
-for (var value of Object.keys(myInfo)) {
-    console.log(value);
-}
-for (var value of Object.values(myInfo)) {
-    console.log(value);
+var myArray = [
+    'Javascript',
+    'PHP'
+];
+var i = 0;
+while (i < myArray.length) {
+    console.log(myArray[i]);
+    i++;
 }
