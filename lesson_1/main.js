@@ -1,28 +1,29 @@
-/**
- *  Vòng lặp - Loop
- *
- * 1. for - Lặp với điều kiện đúng
- * 2. for/in - Lặp qua key của đối tượng
- * 3. for/of - Lặp qua value của đối phương
- * 4. while - Lặp khi điều kiện đúng
- * 5. do/while - Lặp ít nhất 1 lần, sau đó lặp khi điều kiện đúng
- *
- */
+// For/in loop
 
-//For loop
+// var myInfo = {
+//     name: 'Son Dang',
+//     age: 18,
+//     address: 'Ha Noi, VN'
+// };
 
-for (var i = 1; i <= 1000; i++) {
-    console.log(i);
+// for (var key in myInfo) {
+//     console.log(key);
+//     console.log(myInfo[key]);
+// }
+
+// var languages = [
+//     'Javascript',
+//     'PHP',
+//     'Ruby'
+// ];
+
+// for (var key in languages) {
+//     console.log(languages[key]);
+// }
+
+var languages = 'JavaScript';
+
+for (var key in languages) {
+    console.log(languages[key]);
 }
 
-var myArray = [
-    'Javascript',
-    'PHP',
-    'Java',
-    'Dart'
-];
-var arrayLength = myArray.length;
-
-for (var i = 0; i < arrayLength; i++) {
-    console.log(myArray[i]);
-}
