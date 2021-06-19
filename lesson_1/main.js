@@ -1,29 +1,25 @@
-// For/in loop
-
-// var myInfo = {
-//     name: 'Son Dang',
-//     age: 18,
-//     address: 'Ha Noi, VN'
-// };
-
-// for (var key in myInfo) {
-//     console.log(key);
-//     console.log(myInfo[key]);
-// }
+// For/of loop
 
 // var languages = [
-//     'Javascript',
+//     'JavaScript',
 //     'PHP',
-//     'Ruby'
+//     'Java'
 // ];
 
-// for (var key in languages) {
-//     console.log(languages[key]);
+// for (var value of languages) {
+//     console.log(value);
 // }
 
-var languages = 'JavaScript';
 
-for (var key in languages) {
-    console.log(languages[key]);
+var myInfo = {
+    name: 'Son Dang',
+    age: 18
+};
+// console.log(Object.keys(myInfo));
+// console.log(Object.values(myInfo));
+for (var value of Object.keys(myInfo)) {
+    console.log(value);
 }
-
+for (var value of Object.values(myInfo)) {
+    console.log(value);
+}
