@@ -1,28 +1,21 @@
-// do/while loop
+// Break & Continue in loop
 
-// var i = 0;
 
-// do {
-//     i++;
-
+// break
+// for (var i = 0; i < 10; i++) {
 //     console.log(i);
-// } while (i < 10);
+//     if (i >= 5) {
+//         break;
+//     }
+// }
 
 
-var i = 0;
+// Continue
 
-var isSuccess = false;
-do {
-    i++;
-
-    console.log('Nạp thẻ lần ' + i);
-    //Nạp thẻ thành công
-    // if (true) {
-    //     isSuccess = true;
-    // }
-
-    // nạp thẻ thất bại
-    if (false) {
-        isSuccess = true;
+for (var i = 0; i < 10; i++) {
+    if (i % 2 !== 0) {
+        continue;
     }
-} while (!isSuccess && i <= 3);
+    console.log(i);
+
+}
