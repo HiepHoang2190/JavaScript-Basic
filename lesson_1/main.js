@@ -45,41 +45,17 @@ var courses = [
     }
 ];
 
-// forEach()
-// courses.forEach(function (course, index) {
-//     console.log(index, course);
-// });
+function courseHandler(course, index, originArray) {
+    return {
+        id: course.id,
+        name: `Khoa hoc: ${course.name}`,
+        coin: course.coin,
+        coinText: `Gia: ${course.coin}`,
+        index: index,
+        originArray: originArray,
+        // originArray: courses
+    };
+}
+var newCourses = courses.map(courseHandler);
 
-// every() : kiểm tra tất cả các phần tử thỏa mãn điều gì đó
-//  ví dụ ở trên kiểm tra khóa học trên là miễn phí hết hay là có phí
-// var isFree = courses.every(function (course, index) {
-//     console.log(index);
-//     return course.coin === 0;
-// });
-
-// console.log(isFree);
-
-// some() : kiểm tra chỉ cần 1 phần tử thỏa mãn điều gì đó
-
-// var isFree = courses.some(function (course, index) {
-//     console.log(index);
-//     return course.coin === 0;
-// });
-
-// console.log(isFree);
-
-//find()
-
-// var isFree = courses.find(function (course, index) {
-//     return course.name === 'Ruby';
-// });
-
-// console.log(isFree);
-
-//filter()
-
-var listCourses = courses.filter(function (course, index) {
-    return course.name === 'Ruby';
-});
-
-console.log(listCourses);
+console.log(newCourses);
