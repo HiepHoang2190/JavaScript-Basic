@@ -2,61 +2,71 @@
 
 
 
-// filter
+// some: true/false
 
 // var courses = [
 //     {
 //         name: 'JavaScript',
-//         coin: 680
+//         coin: 680,
+//         isFinish: true,
 //     },
 //     {
 //         name: 'PHP',
-//         coin: 860
+//         coin: 860,
+//         isFinish: false,
 //     },
 //     {
 //         name: 'Ruby',
-//         coin: 980
+//         coin: 980,
+//         isFinish: false,
 //     }
 // ];
 
-// var filterCourses = courses.filter(function (course, index, array) {
-//     return course.coin > 700;
+// var result = courses.some(function (course, index) {
+//     return course.isFinish;
 // });
 
-// console.log(filterCourses);
+// console.log(result);
 
 
 
-// filter2
-Array.prototype.filter2 = function (callback) {
-    var output = [];
+
+// some2: true/false
+
+Array.prototype.some2 = function (callback) {
+    var output = false;
     for (var index in this) {
         if (this.hasOwnProperty(index)) {
-            var result = callback(this[index], index, this);
-            if (result) {
-                output.push(this[index]);
+            if (callback(this[index], index, this)) {
+                output = true;
+                break;
             }
         }
     }
     return output;
-};
+}
+
+
 var courses = [
     {
         name: 'JavaScript',
-        coin: 680
+        coin: 680,
+        isFinish: true,
     },
     {
         name: 'PHP',
-        coin: 860
+        coin: 860,
+        isFinish: false,
     },
     {
         name: 'Ruby',
-        coin: 980
+        coin: 980,
+        isFinish: false,
     }
 ];
 
-var filterCourses = courses.filter2(function (course, index, array) {
-    return course.coin > 700;
+var result = courses.some2(function (course, index) {
+    return course.isFinish;
 });
 
-console.log(filterCourses);
+console.log(result);
