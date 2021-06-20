@@ -1,15 +1,37 @@
-// includes method
+/**
+ * Math object
+ * 
+ * - Math.PI
+ * - Math.round()
+ * - Math.abs()
+ * - Math.ceil()
+ * - Math.floor()
+ * - Math.random()
+ * - Math.min()
+ * - Math.max()
+ * 
+ */
 
-// console.log(Array.prototype.includes);
+console.log(Math.PI);
 
-var title = "Responsive web design";
-console.log(title.includes('Responsive', 0));
-// console.log(title.includes('sdsdsđs'));
+var random = Math.floor(Math.random() * 5);
 
+var bonus = [
+    '10 coin',
+    '20 coin',
+    '30 coin',
+    '40 coin',
+    '50 coin',
 
-var courses = ['Javascript', 'PHP', 'Dart'];
+];
 
-console.log(courses.includes('Javascript', 0));
-console.log(courses.includes('Javascript', 1));
-console.log(courses.includes('Javascript', -1));
-console.log(courses.includes('Javascript', -3));
+console.log(bonus[random]);
+
+var random2 = Math.floor(Math.random() * 100);
+
+if (random2 < 5) {
+    console.log('Cường hóa thành công');
+
+}
+
+console.log(Math.min(-100, 2, 4, 777));
