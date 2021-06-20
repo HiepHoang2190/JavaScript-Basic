@@ -1,37 +1,20 @@
-/**
- * Math object
- * 
- * - Math.PI
- * - Math.round()
- * - Math.abs()
- * - Math.ceil()
- * - Math.floor()
- * - Math.random()
- * - Math.min()
- * - Math.max()
- * 
- */
+// Callback ?
 
-console.log(Math.PI);
+// Là hàm (function) được truyền qua đối số
+// Khi gọi hàm khác
 
-var random = Math.floor(Math.random() * 5);
+// 1. Là hàm
+// 2. Được truyền qua đối số
 
-var bonus = [
-    '10 coin',
-    '20 coin',
-    '30 coin',
-    '40 coin',
-    '50 coin',
-
-];
-
-console.log(bonus[random]);
-
-var random2 = Math.floor(Math.random() * 100);
-
-if (random2 < 5) {
-    console.log('Cường hóa thành công');
+function myFunction(param) {
+    if (typeof param === 'function') {
+        param('Học lập trình');
+    }
 
 }
 
-console.log(Math.min(-100, 2, 4, 777));
+function myCallback(value) {
+    console.log('Value: ', value);
+}
+
+myFunction(myCallback);
