@@ -11,9 +11,7 @@
  */
 
 
-// -------------------------------
 
 
-//  Javascript: Browser | Server (NodeJS)
-
-//  Browwser : HTML -> DOM -> WEB API
+console.log(document);
+document.write('HELLO GUYS!');
