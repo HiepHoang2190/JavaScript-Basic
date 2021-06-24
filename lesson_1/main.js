@@ -13,23 +13,14 @@
 
 
 
-var headingNode = document.getElementById('heading');
-console.log({
-    elemment: headingNode
-});
+var boxNode = document.querySelector('.box-1');
 
-var headingNodes = document.getElementsByClassName('heading');
-console.log(headingNodes);
+// Công việc 1 : Sử dụng tới `boxNode`
+console.log(boxNode);
+
+// Công việc 2: Sử dụng tới các li elements là con của `.box-1`
 
 
-var headingNodes = document.getElementsByTagName('p');
-console.log(headingNodes);
-
-var headingH2 = document.querySelector('.box .heading-2:first-child');
-
-console.log(headingH2);
-
-console.log(document.forms);
-console.log(document.forms[0]);
-console.log(document.forms['form-1']);
-console.log(document.forms.testForm);
+console.log(boxNode.querySelectorAll('li'));
+console.log(boxNode.getElementsByTagName('li'));
+console.log(boxNode.getElementsByTagName('p'));
